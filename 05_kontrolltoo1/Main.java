@@ -1,14 +1,19 @@
-public class Main {
-    public static void main(String[] args) {
-        System.out.println("Harmooniline keskmine,  " +
-                "Koosta funktsioon, mille sisendiks on kahe kilomeetripikkuse lõigu läbimise kiirused (km/h)," +
-                " väljundiks nende kahe kilomeetri läbimise keskmine kiirus.\n" +
-                "* Funktsioonile antakse ette kilomeetripikkuste lõikude läbimiste keskmised kiirused kogumina (km/h)." +
-                " Väljasta kogu selle tee läbimise keskmine kiirus.\n" +
-                "* Kilomeetriste lõikude läbimiste keskmised kiirused loetakse sisse failist, kogu teekonna läbimise keskmine kiirus " +
-                "salvestatakse faili.");
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
-        HarmoonilineKeskmine keskmineKiirus = new HarmoonilineKeskmine(20,30);
+public class Main {
+
+    public static void main(String[] args) {
+
+        HarmoonilineKeskmine keskmine1 = new HarmoonilineKeskmine(20,30);
+        keskmine1.Keskmine();
+        List<Double> kiirused = new ArrayList<>();
+        LoikudeKeskmine keskmine2 = new LoikudeKeskmine(kiirused);
+        keskmine2.KiirusteKeskmine();
+
+
+
 
     }
 }
